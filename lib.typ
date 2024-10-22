@@ -8,7 +8,7 @@
   authors: (),
 
   // The article's paper size. Also affects the margins.
-  paper-size: "us-letter",
+  paper-size: "a4",
 
   // The content.
   body
@@ -26,7 +26,7 @@
   
   // Configure the page.
   set page(
-    paper: "a4",
+    paper: paper-size,
     flipped: true,
     margin: ("top": 8mm, "rest": 5mm),
     header-ascent: 1.5mm,
