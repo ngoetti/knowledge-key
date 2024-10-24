@@ -1,4 +1,4 @@
-#import "@preview/knowledge-key:1.0.0": *
+#import "@preview/knowledge-key:1.0.1": *
 
 #show: knowledge-key.with(
   title: [Title],

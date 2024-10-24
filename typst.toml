@@ -1,6 +1,6 @@
 [package]
 name = "knowledge-key"
-version = "1.0.0"
+version = "1.0.1"
 compiler = "0.11.0"
 entrypoint = "lib.typ"
 repository = "https://github.com/ngoetti/knowledge-key"
