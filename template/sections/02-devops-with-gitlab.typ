@@ -37,10 +37,8 @@ scope” which environment corresponds to which Kubernetes cluster
 
 === Deploy tokens and pulling secrets
 We need Kubernetes authentication information so it can pull the Docker image from our Gitlab registry.
-Gitlab has a feature named “deploy tokens” that can be defined per project and have a defined scope like “read_registry”.
-
-Then you expose the deploy token with environment variables to the build environment.
-
+Gitlab has a feature named “deploy tokens” that can be defined per project and have a defined scope like “read_registry”.\
+Then you expose the deploy token with environment variables to the build environment.\
 In Kubernetes, you can create a secret with the type “docker-registry” and pass the deploy token
 to it.
 
@@ -125,8 +123,7 @@ Gitlab can check an application “from outside” for security issues.
 === Application monitoring with Prometheus
 Prometheus identifies metric endpoints from an application and scrapes periodically metrics from those endpoints.
 If the Kubernetes integration with Gitlab is activated, Gitlab will deploy a Prometheus server to said cluster.
-To define that your service has endpoints to get data from for Prometheus, you need to add annotations to the Kubernetes service. (In the kubernetes Service file)
-
+To define that your service has endpoints to get data from for Prometheus, you need to add annotations to the Kubernetes service. (In the kubernetes Service file)\
 The data can be reviewed in Gitlab directly.
 Spaceships are added to the timeline to indicate when a deployment happened.
 
@@ -134,11 +131,9 @@ Spaceships are added to the timeline to indicate when a deployment happened.
 === Launching dedicated runners
 When using gitlab.com, your jobs are running on shared infrastructure.
 You can also launch dedicated runners for your project and connect them to gitlab.com.
-Below is the configuration page and an overview of runners assigned to the project.
-
+Below is the configuration page and an overview of runners assigned to the project.\
 When launching dedicated runners, you can assign them tags.
-In your pipeline definition, you can force to run the job on dedicated runners by also mentioning the tags used for dedicated runners in the pipeline.
-
+In your pipeline definition, you can force to run the job on dedicated runners by also mentioning the tags used for dedicated runners in the pipeline.\
 There is different type of runners:
 - Shell: Run builds directly on runner host. Useful for building virtual machine or Docker
 images.

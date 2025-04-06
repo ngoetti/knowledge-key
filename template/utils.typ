@@ -1,5 +1,5 @@
-#import "@preview/codelst:2.0.1": sourcecode
-#import "@preview/tablex:0.0.8": tablex
+#import "@preview/codelst:2.0.2": sourcecode
+#import "@preview/tablex:0.0.9": tablex
 
 #let sourcecode = sourcecode.with(frame: (code) => block(
   radius: 4pt,
