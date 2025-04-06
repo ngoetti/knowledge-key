@@ -13,7 +13,7 @@
   // The content.
   body
 ) = {
-  let line_skip = 0.4em
+  let line_skip = 0.35em
   let font_size = 6pt
   let level1_color = "#8c195f";
   let level2_color = "#a12b66"; 
@@ -21,8 +21,8 @@
   let level4_color = "#cb4f74"; 
   let level5_color = "#C63B65"; 
 
-  show: set block(below: line_skip)
-  show: set par(leading: line_skip, justify: true)
+  set block(spacing: line_skip)
+  set par(leading: line_skip, justify: true)
   
   // Configure the page.
   set page(
@@ -33,11 +33,11 @@
     header: align(center, text(
       1.1em,
       weight: "bold",
-      [#title / #authors / #counter(page).display()],
+      [#title / #authors / #context counter(page).display()],
     )),
   )
 
-  set text(size: font_size, font: "Noto Sans")
+  set text(size: font_size, font: "Libertinus Serif")
 
   set terms(hanging-indent: 0mm)
 

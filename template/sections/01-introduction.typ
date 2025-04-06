@@ -4,7 +4,6 @@
 == The DevOps pipelines
 *What is DevOps?*\
 DevOps team focuses on CI/CD. DevOps team would like to be continuously pushing small changes out to production, monitor what happens in production, see  he result of that and use that to make further improvements to the system.
-
 *Plan stage*: Backlog filled, Sprint Planning\
 *Code stage*: Code is written, reviewed, and merged\
 *Build stage*: CI Pipeline builds code and runs tests\
@@ -94,7 +93,6 @@ When you do not declare stages, the default stages are
 *Running build steps in parallel*\
 By assigning two jobs to the same stages, Gitlab CI runs the two jobs in parallel together.
 The parallel tag creates copies of the same job and runs them in parallel.
-
 *Speeding up builds with the cache*\
 We can specify paths to cache the modules and speed up future builds. (The `$CI_COMMIT_REF_SLUG` is a variable that identifies the branch.)
 This Variable can be used to reference the cache folder from the branch.
@@ -124,8 +122,7 @@ The key when can be added.
 - On success
 - On failure
 - Always
-The default is on success
-
+The default is on success\
 *Using artifacts in future stages*\
 By default, any artifacts produced in one job is going to be available to the other jobs.
 - The test job will get both artifacts (because it has no explicit dependencies)
@@ -133,7 +130,6 @@ By default, any artifacts produced in one job is going to be available to the ot
 
 #grid(
   columns: (auto, auto),
-
   sourcecode[```yaml
 build:
   stage: build

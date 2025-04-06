@@ -24,7 +24,7 @@ function in a show rule. If you want to change an existing project to use this
 template, you can add a show rule like this at the top of your file:
 
 ```typ
-#import "@preview/knowledge-key:1.0.1": *
+#import "@preview/knowledge-key:1.0.2": *
 
 #show: knowledge-key.with(
   title: [Title],
